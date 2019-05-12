@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>        
+        <title>Atividade</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+        <style>
+            .box{
+                border: 0.5px solid lightgray;                
+                border-radius: 2em;
+                box-shadow: 3px 3px 3px lightgrey;
+            }
+            .title-form{
+                background-color: rgb(157, 196, 233);
+                border-radius: 2em 2em 0 0;
+                color:#fff;
+                text-align: center;
+            }
+            form{
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body class="container">
+        <div class="box">
+            <div class="title-form">
+                <h1 class="pt-2">Cadastro de Alunos</h1>
+            </div>
+            <form method="post" action="/Atividade/cadastroAluno">
+                <div class="form-group">
+                    <label class="col-init">Nome aluno</label>    
+                    <input type="text" class="form-control" name="nome" placeholder="Digite um nome" />
+                </div>
+                
+                <div class="form-group">
+                    <label for="col-init">Disciplina</label>
+                    <input type="text" class="form-control" name="disciplina" placeholder="Digite uma disciplina" />
+                </div>
+                
+                <div class="form-group">
+                    <label for="col-init">Curso</label>
+                    <input type="text" class="form-control" name="curso" placeholder="Digite um curso" />
+                </div>
+                
+                <div class="form-group" >
+                    <label for="col-init">Nota</label>
+                    <input type="text" class="form-control" name="nota" placeholder="Digite uma nota" />
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Enviar</button>            
+            </form>
+        </div>                        
+    </body>
+</html>
